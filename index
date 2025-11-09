@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - CS Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css"> <!-- New animation styles -->
+</head>
+<body>
+    <header class="fade-in">
+        <h1 id="typing-effect"></h1> <!-- For typing animation -->
+        <nav>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#certificates" class="nav-link">Certificates</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <button id="dark-mode-toggle" class="toggle-btn">🌙 Dark Mode</button> <!-- New toggle -->
+    </header>
+    
+    <section id="about" class="fade-in-on-scroll">
+        <h2>About Me</h2>
+        <p>I'm a CS student passionate about [your interests]. Check out my GitHub: <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+        <div class="skills">
+            <h3>Skills</h3>
+            <div class="skill-bar" data-skill="JavaScript" data-level="80"></div>
+            <div class="skill-bar" data-skill="Python" data-level="90"></div>
+            <!-- Add more -->
+        </div>
+    </section>
+    
+    <section id="projects" class="fade-in-on-scroll">
+        <h2>Projects</h2>
+        <div id="project-grid" class="project-grid">
+            <!-- Repos loaded dynamically -->
+        </div>
+    </section>
+    
+    <section id="certificates" class="fade-in-on-scroll">
+        <h2>Certificates</h2>
+        <div class="cert-grid">
+            <img src="assets/cert1.jpg" alt="Certificate 1" class="cert-img hover-scale">
+            <img src="assets/cert2.jpg" alt="Certificate 2" class="cert-img hover-scale">
+        </div>
+    </section>
+    
+    <section id="contact" class="fade-in-on-scroll">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com | LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
